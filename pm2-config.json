@@ -1,0 +1,24 @@
+{
+    "apps": [{
+        "name": "MMTDB",
+        "script": "./src/bin/www",
+        "watch": ["./src"],
+        "ignore_watch": ["./src/public"],
+        "watch_options": {
+            "followSymlinks": false
+        },
+        "log_date_format": "YYYY-MM-DD HH:mm:ss",
+        "env_production": {
+            "NODE_ENV": "production"
+         },
+         "env_development": {
+            "NODE_ENV": "development"
+         },
+         "env_staging": {
+            "NODE_ENV": "staging"
+         },
+         "env_local": {
+            "NODE_ENV": "local"
+         }
+    }]
+}

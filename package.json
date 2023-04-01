@@ -1,0 +1,24 @@
+{
+  "name": "mmtdb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:local": "pm2 start pm2-config.json --watch --env local",
+    "start:prod": "pm2 start pm2-config.json --watch --env production",
+    "stop": "pm2 stop pm2-config.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "http-errors": "^2.0.0",
+    "jet-logger": "^1.3.1",
+    "mongoose": "^7.0.3",
+    "morgan": "^1.10.0"
+  }
+}

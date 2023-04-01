@@ -1,0 +1,40 @@
+require('dotenv').config();
+
+const http = require('http');
+const Logger = require('../utils/logger.util');
+const app = require('../app');
+const database = require('../database');
+
+const PORT = process.env.PORT || 3000;
+const server = http.createServer(app);
+server.listen(PORT);
+
+(function() {
+    server
+    .on('listening', async () => {
+        Logger.info(`Server running on port ${PORT}`);
+
+        try {
+            await database.connect();
+            Logger.info(`Database connected successfully.`);
+        }
+        catch(err) {
+            Logger.err(`Database connection fails! \n ${err.stack}`);
+        }
+    })
+    .on('error', (err) => {
+        Logger.err(`Server unable to start! \n ${err}`);
+    });
+
+    process.on('uncaughtException', (err, origin) => {
+        /**
+         * Other error handling logic here, like mail to admin.
+         */
+
+        Logger.err(`Uncaught exception error: ${err.stack}`);
+        Logger.err(`Origin: ${origin}`);
+        process.exit();
+    })
+})();
+
+
