@@ -1,0 +1,112 @@
+{
+    "id": 1,
+    "model": "Galaxy S23 Ultra",
+    "brand": "Samsung",
+    "series": "S",
+    "price": 4500000,
+    "category": ["Flagship, Phone"],  
+    "connectivity": {
+      "network": ["GSM", "CDMA", "HSPA", "EVDO", "LTE", "5G"],
+      "usb": "Type-C"
+    },
+    "body": {
+      "dimensions": [
+        {
+          "type": null,
+          "width": 78.1,
+          "height": 163.4,
+          "depth": 8.9,
+          "weight": 234
+        }
+      ],
+      "build": {
+        "frame": "Aluminum",
+        "front": "Gorilla Glass Victus 2",
+        "back": "Gorilla Glass Victus 2"
+      },
+      "sim": "Nano-SIM and eSIM or Dual SIM"
+    },
+    "display": {
+      "technology": "Dynamic AMOLED 2X",
+      "refresh_rate": 120,
+      "size": 6.8,
+      "resolution_x": 1440,
+      "resolution_y": 3088,
+      "Density": 500,
+      "always_on": true
+    },
+    "platform": {
+      "os": {
+        "type": "Android",
+        "version": 13
+      },
+      "ui": {
+        "name": "One UI",
+        "version": 13
+      }
+    },
+    "processor": {
+      "chipset_brand": "Qualcomm",
+      "chipset_name": "Snapdragon",
+      "chipset_cpu_version": "8",
+      "chipset_cpu_gen": 1,
+      "cpu": "Octa-core",
+      "gpu": "Adreno 730"
+    },
+    "memory": {
+      "has_card_slot": false,
+      "expandable_storage": null,
+      "storage": [256, 512, 1000],
+      "ram": [8, 12]
+    },
+    "camera": {
+      "rear": [
+        {
+          "type": "wide",
+          "resolution": 50,
+          "features": [],
+          "video": null
+        },
+        {
+          "type": "telephoto",
+          "resolution": 10,
+          "features": [],
+          "video": null
+        },
+        {
+          "type": "ultrawide",
+          "resolution": 12,
+          "features": [],
+          "video": null
+        },
+        {
+          "resolution": "3D ToF",
+          "features": [],
+          "video": ""
+        }
+      ],
+      "front": [
+        {
+          "type": "wide",
+          "resolution": 12,
+          "features": [],
+          "video": null
+        }
+      ]
+    },
+    "speaker": {
+      "type": ["Stereo"],
+      "has_earphone_jack": false,
+      "feature": "Tuned by AKG"
+    },
+    "battery": {
+      "type": "Li-Ion",
+      "is_removable": false,
+      "capacity": 5000,
+      "charging": 45,
+      "has_fast_charging": true
+    },
+    "sensors": ["Fingerprint (under display, ultrasonic)", "Accelerometer", "Gyro", "Proximity", "Compass", "Barometer"],
+    "colors": ["Phantom Black", "Green", "Cream", "Lavender", "Graphite", "Sky Blue", "Lime", "Red", "BMW M Edition"],
+    "other_features": ["IP68 dust/water resistant (up to 1.5m for 30 mins)", "Samsung DeX", "Samsung Pay (Visa, MasterCard certified)", "\n"]
+}
