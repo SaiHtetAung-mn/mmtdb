@@ -1,6 +1,9 @@
 const express = require('express');
 const morgan = require('morgan');
 const cors = require('cors');
+const swaggerDocJs = require('swagger-jsdoc');
+const swaggerUI = require('swagger-ui-express');
+const swaggerConfig = require('./configs/swagger.config');
 const Logger = require('./utils/logger.util');
 const createError = require('http-errors');
 const { getErrorResponseFormat } = require('./utils/api-res-format.util');
@@ -20,6 +23,7 @@ app.use(express.urlencoded({extended: true}));
  * Route config
  */
 app.use('/api', apiRouter);
+app.use('/api-docs', swaggerUI.serve, swaggerUI.setup(swaggerDocJs(swaggerConfig.v1)));
 
 /*
 * 404 middleware for all api route
